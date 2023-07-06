@@ -1,13 +1,14 @@
-// Create an array with multiple elements.
-// Use the filter() method to create a new array containing only specific elements based on a condition.
-// Log the filtered array to the console.
+// // Create an array with multiple elements.
+// // Use the filter() method to create a new array containing only specific elements based on a condition.
+// // Log the filtered array to the console.
 
-// const multipleArray = ['obasanjo', 'yaradua', 'jonathan', 'buhari', 'tinubu'] //created multiple elements in the array
-// multipleArray.filter
+const multipleArray = ['obasanjo', 'yaradua', 'jonathan', 'buhari', 'tinubu','tambuwal', 'tamuno'] //created multiple elements in the array
 
-const ages = [32, 33, 16, 40];
-const result = ages.filter(checkAdult);
+const result = multipleArray.filter(function(result){
+    return result.startsWith('t') 
+})
+console.log(result);
 
-function checkAdult(age) {
-  return age >= 18;
-}
+
+
+                                  
